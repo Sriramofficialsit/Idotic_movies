@@ -14,7 +14,7 @@
 
     // Fetch genres from the API
     const fetchGenres = () => {
-        const genreEndpoint = `https://api.themoviedb.org/3/genre/movie/list?api_key=f968fd1bfc12fafc2192ce47fbbe2cf7&language=en-US`;
+        const genreEndpoint = `https://api.themoviedb.org/3/genre/movie/list?api_key=yourapikey`;
         fetch(genreEndpoint)
         .then((response) => response.json())
         .then((data) => {
