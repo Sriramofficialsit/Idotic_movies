@@ -8,7 +8,7 @@ const MovieDetails = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=f968fd1bfc12fafc2192ce47fbbe2cf7`)
+    fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=yourapikey`)
       .then((response) => response.json())
       .then((data) => {
         setMovie(data);
