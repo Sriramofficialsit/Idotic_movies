@@ -30,8 +30,8 @@
         setError(null);
 
         let endpoint = query
-        ? `https://api.themoviedb.org/3/search/movie?query=${query}&page=${page}&api_key=f968fd1bfc12fafc2192ce47fbbe2cf7`
-        : `https://api.themoviedb.org/3/discover/movie?page=${page}&api_key=f968fd1bfc12fafc2192ce47fbbe2cf7`;
+        ? `https://api.themoviedb.org/3/search/movie?query=${query}&page=${page}&api_key=`
+        : `https://api.themoviedb.org/3/discover/movie?page=${page}&api_key=`;
 
         // Add genre filter to the endpoint if a genre is selected
         if (genre) {
